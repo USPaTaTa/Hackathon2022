@@ -1,0 +1,16 @@
+.artistHeader {
+  text-align: center;
+}
+
+.video, .video div {
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.comment {
+  text-align: center;
+  /* align-items: center;
+  align-content: center; */
+  margin: auto;
+}
