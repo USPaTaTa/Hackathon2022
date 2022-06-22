@@ -1,49 +1,61 @@
-
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import './sondage.css';
-const Texte= () => {
-
-  return(
-
-<div class="row d-flex justify-content-center mt-100 mb-100">
-    <div class="col-lg-6">
-        <div class="card">
-            <div class="card-body text-center">
-                <h4 class="card-title">Derniers commentaires</h4>
-            </div>
-            <div class="comment-widgets">
-               
-                <div class="d-flex flex-row comment-row m-t-0">
-                    <div class="p-2"><img src="https://i.imgur.com/Ur43esv.jpg" alt="user" width="50" class="rounded-circle"/></div>
-                    <div class="comment-text w-100">
-                        <h6 class="font-medium">James Thomas</h6> <span class="m-b-15 d-block">This is awesome website. I would love to comeback again. </span>
-                        <div class="comment-footer"> <span class="text-muted float-right">April 14, 2019</span> <br></br><br></br><button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
-                    </div>
-                </div> 
-                <div class="d-flex flex-row comment-row">
-                    <div class="p-2"><img src="https://i.imgur.com/8RKXAIV.jpg" alt="user" width="50" class="rounded-circle"/></div>
-                    <div class="comment-text active w-100">
-                        <h6 class="font-medium">Michael Hussey</h6> <span class="m-b-15 d-block">Thanks bbbootstrap.com for providing such useful snippets. </span>
-                        <div class="comment-footer"> <span class="text-muted float-right">May 10, 2019</span> <br></br><br></br><button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
-                    </div>
-                </div> 
-                <div class="d-flex flex-row comment-row">
-                    <div class="p-2"><img src="https://i.imgur.com/J6l19aF.jpg" alt="user" width="50" class="rounded-circle"/></div>
-                    <div class="comment-text w-100">
-                        <h6 class="font-medium">Johnathan Doeting</h6> <span class="m-b-15 d-block">Great industry leaders are not the real heroes of stock market. </span>
-                        <div class="comment-footer"> <span class="text-muted float-right">August 1, 2019</span><br></br><br></br> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </div>
-</div>
-
-  
-)
-}
 
 
 
-export default Texte;
+
+import { LeafPoll, Result } from "react-leaf-polls"
+import "react-leaf-polls/dist/index.css";
+
+const PollCust = () => {
+
+  const resData = [[
+    { id: 0, text: "Un chat", votes: 0 },
+    { id: 1, text: "Un Oeuf", votes: 0 },
+    { id: 2, text: "Un oiseau", votes: 0 },
+  ],[
+    { id: 0, text: "Oui", votes: 0 },
+    { id: 1, text: "Non", votes: 0 },
+
+  ],[
+    { id: 0, text: "Oui ", votes: 0 },
+    { id: 1, text: "Non", votes: 0 },
+  ],
+  [
+    { id: 0, text: "Oui", votes: 0 },
+    { id: 1, text: "Non", votes: 0 },
+  ]
+];
+  const pairRandom = Math.floor(Math.random()*4);
+  let questionType = 'multiple'
+  const questions = ['Choisissez la prochaine sculpture','Aimez vous la sclupture que je fait ?','Faut il faire des améliorations','Choisir une question']
+ 
+
+  const customTheme = {
+    textColor: "black",
+    mainColor: "#FF0000",
+    backgroundColor: "rgb(255,255,255)",
+    alignment: "center",
+    width:200,
+    
+  };
+
+  return (
+    <LeafPoll
+      type={questionType}
+      question={questions[pairRandom]}
+      results={resData[pairRandom]}
+      theme={customTheme}
+      isVoted={false}
+    />
+  );
+};
+
+export default PollCust;
+   
+
+
+
+
+
