@@ -2,8 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp"
 import Formulaire from './components/formulaire';
-import Home from './components/home';
-import 
+import Home from './components/home'; 
 
 
 function App() {
