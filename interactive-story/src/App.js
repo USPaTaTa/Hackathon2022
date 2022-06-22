@@ -3,7 +3,6 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp"
 import Formulaire from './components/formulaire';
 import Home from './components/home';
-import 
 
 
 function App() {
