@@ -6,6 +6,8 @@ import { NavLink } from "react-router-dom";
 
 import Donnees from './Donnees.json';
 
+import photo from '../img/profil.png';
+
 
 const layoutCSS = {
   height: '100%',
@@ -24,6 +26,7 @@ const Home = () => {
               <tr key={donnee.id}>
               <div className="artiste">
                 <div className="image">
+                <img src={photo} alt="photo" width="115" height="115" />
                 </div>
                 <td>{donnee.nom}</td>
               </div>
