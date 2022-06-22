@@ -1,0 +1,24 @@
+.player{
+    overflow: hidden;
+    border-radius: 25px;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+
+.description{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.plus{
+  margin-left: 700px;
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  background: gray;
+  color: white; 
+  cursor: pointer;
+    }
+    
