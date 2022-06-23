@@ -5,7 +5,6 @@ import Formulaire from './components/formulaire';
 import Home from './components/home';
 import Artiste from "./components/artistPage"
 import Sondage from "./components/sondage";
-import Commentaire from "./components/commentaire";
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <Route path="/home" element={<Home/>} />
         <Route path="/artist/delacoux" element={<Artiste/>} />
         <Route path="/sondage" element={<Sondage />} />
-        <Route path="/commentaire" element={<Commentaire />} />
       </Routes>
     </BrowserRouter>
   );

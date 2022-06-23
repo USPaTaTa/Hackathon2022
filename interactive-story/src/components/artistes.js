@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Popup from "./popup";
-import "./artistes.css";
+import "../styles/artistes.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
