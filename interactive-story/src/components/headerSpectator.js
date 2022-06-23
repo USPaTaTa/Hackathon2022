@@ -13,7 +13,7 @@ const header = () => {
         <span>Chaoumet</span>
       </div>
       <div className="title">
-        <NavLink to="/">
+        <NavLink to="/Home">
           <img src={title} alt="" srcset="" />
         </NavLink>
       </div>

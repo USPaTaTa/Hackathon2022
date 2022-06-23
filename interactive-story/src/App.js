@@ -3,6 +3,7 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp"
 import Formulaire from './components/formulaire';
 import Home from './components/home';
+import Artiste from "./components/artistPage"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/formulaire" element={<Formulaire/>} />
         <Route path="/home" element={<Home/>} />
+        <Route path="/artist/delacoux" element={<Artiste/>} />
       </Routes>
     </BrowserRouter>
   );

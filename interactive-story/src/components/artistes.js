@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import Popup from './popup';
-import ReactPlayer from 'react-player'
 import './artistes.css'
 
 function App() {
