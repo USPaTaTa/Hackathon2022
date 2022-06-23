@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import cn from "classnames";
 import useDynamicHeightField from "./useDynamicHeighField";
 import "../styles/CommentBox.css";
-import Thomas from "../img/thomas.jpg"
+import Thomas from "../img/thomas.jpg";
 
 const INITIAL_HEIGHT = 46;
 
@@ -38,33 +38,34 @@ export default function CommentBox() {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(commentValue);
+    document.getElementById("commentaire").innerHTML =
+      " Chaoumet : " + commentValue;
   };
 
   return (
     <div className="container">
+      <span>Jean-Michel : J'ai beaucoup apprécié</span>
+      <br />
+      <span id="commentaire"></span>
       <form
         onSubmit={onSubmit}
         ref={containerRef}
         className={cn("comment-box", {
           expanded: isExpanded,
           collapsed: !isExpanded,
-          modified: commentValue.length > 0
+          modified: commentValue.length > 0,
         })}
         style={{
-          minHeight: isExpanded ? outerHeight.current : INITIAL_HEIGHT
+          minHeight: isExpanded ? outerHeight.current : INITIAL_HEIGHT,
         }}
       >
         <div className="header">
           <div className="user">
-            <img
-              src={Thomas}
-              width={40}
-              alt="User avatar"
-            />
+            <img src={Thomas} width={40} alt="User avatar" />
             <span>Chaoumet</span>
           </div>
         </div>
-        <label htmlFor="comment">Laisser un commentaire</label>
+        <label id="lelabel" htmlFor="comment">Laisser un commentaire</label>
         <textarea
           ref={textRef}
           onClick={onExpand}
@@ -80,7 +81,7 @@ export default function CommentBox() {
           <button type="button" className="cancel" onClick={onClose}>
             Annuler
           </button>
-          <button type="submit" disabled={commentValue.length < 1}>
+          <button id="lebouton" type="submit" disabled={commentValue.length < 1}>
             Envoyer
           </button>
         </div>
