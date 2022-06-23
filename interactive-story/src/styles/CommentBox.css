@@ -12,36 +12,32 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: var(--font-family);
-}
-
-textarea {
+#comment {
   font-family: var(--font-family);
   border: none;
   resize: none;
 }
 
-textarea::placeholder {
+#comment::placeholder {
   color: var(--gray);
 }
 
-label {
+#lelabel {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-button {
+#lebouton {
   cursor: pointer;
 }
 
-button:disabled {
+#lebouton:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-button[type="submit"] {
+#lebouton[type="submit"] {
   background: var(--green);
   color: var(--white);
   border-radius: var(--border-radius);

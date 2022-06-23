@@ -11,25 +11,27 @@ import "react-leaf-polls/dist/index.css";
 const PollCust = () => {
 
   const resData = [[
-    { id: 0, text: "Un chat", votes: 0 },
-    { id: 1, text: "Un Oeuf", votes: 0 },
-    { id: 2, text: "Un oiseau", votes: 0 },
+    { id: 0, text: "Un chat", votes: 7 },
+    { id: 1, text: "Un Oeuf", votes: 11 },
+    { id: 2, text: "Un oiseau", votes: 3 },
   ],[
-    { id: 0, text: "Oui", votes: 0 },
-    { id: 1, text: "Non", votes: 0 },
+    { id: 0, text: "Oui", votes: 10 },
+    { id: 1, text: "Non", votes: 55 },
 
   ],[
-    { id: 0, text: "Oui ", votes: 0 },
-    { id: 1, text: "Non", votes: 0 },
-  ],
-  [
-    { id: 0, text: "Oui", votes: 0 },
-    { id: 1, text: "Non", votes: 0 },
+    { id: 0, text: "Oui", votes: 33 },
+    { id: 1, text: "Non", votes: 3 },
+  ],[
+    { id: 0, text: "Oui", votes: 3 },
+    { id: 1, text: "Non", votes: 17 },
+  ],[
+    { id: 0, text: "Oui", votes: 44 },
+    { id: 1, text: "Non", votes: 17 },
   ]
 ];
-  const pairRandom = Math.floor(Math.random()*4);
+  const pairRandom = Math.floor(Math.random()*5);
   let questionType = 'multiple'
-  const questions = ['Choisissez la prochaine sculpture','Aimez vous la sclupture que je fait ?','Faut il faire des améliorations','Choisir une question']
+  const questions = ['Choisissez la prochaine sculpture',"Aimez vous la sculpture que j'ai fait ?",'Faut il faire des améliorations ?',"Voulez-vous que je continue les sculpture ?","Est-ce que je me reconvertie ?"]
  
 
   const customTheme = {
