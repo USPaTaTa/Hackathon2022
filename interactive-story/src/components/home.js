@@ -4,15 +4,12 @@ import "./home.css";
 
 import { NavLink } from "react-router-dom";
 
-import Donnees from "./Donnees.json";
-
-import partiste from "../img/artiste.webp";
-
 import photo from "../img/artiste.webp";
 import photo2 from "../img/mascagne.jpg";
-import photo3 from "../img/marion.jpg";
+import photo3 from "../img/kevin.jpeg";
 
 import Header from "./headerSpectator";
+
 
 const layoutCSS = {
   height: "100%",
@@ -46,6 +43,7 @@ Il vous présente ici un aperçu de ses œuvres passées ainsi que toutes ses sc
                     </div>
                   </tr>
                 </div>
+                </NavLink>
                 <div className="rectangle">
                   <tr>
                     <div className="artiste">
@@ -68,18 +66,18 @@ Il vous présente ici un aperçu de ses œuvres passées ainsi que toutes ses sc
                         <img src={photo3} alt="partiste" width="115" height="115" />
                       </div>
                       <div className="nom3">
-                        <td>Marion Siéfert</td>
+                        <td>Kevin Denard</td>
                       </div>
                     </div>
                     <div className="contenu">
-                      <td>Marion Siéfert est autrice, metteuse en scène et performeuse. Son travail mêle plusieurs champs artistiques et théoriques et se réalise via différents médiums : spectacles, films, écriture. Accueillie en 2022 avec Le Grand Sommeil et le projet Extrem’Ados, Marion Siéfert travaillera sur sa nouvelle création, Daddy, qui sera présentée au Parvis en 23.24.</td>
+                      <td>Artiste tarbais, il est multi-instrumentiste, joue et compose une musique qui est un mix de blues et de sonorités indiennes. Parcours atypique car il a du surmonter son handicap (malentendant), est diplômé de la MAI de Nancy puis de la JAI de Nancy, a rencontré les plus grands musiciens de blues à  Boston.
+En 2014, il découvre à Vancouver son instrument de prédilection le Mohan Veena, instrument à 22 cordes.</td>
                     </div>
                   </tr>
                 </div>
-              </NavLink>
-          <NavLink to="/formulaire">
+            <NavLink to="/formulaire">
             <button className="button" variant="outlined">
-              Demande d'être artiste
+              Devenir un artiste
             </button>
           </NavLink>
         </div>
