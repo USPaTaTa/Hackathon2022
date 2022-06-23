@@ -1,0 +1,22 @@
+.navigation {
+  display:flex;
+  flex-direction: row;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f6f7fc;
+  justify-content: space-between;
+}
+.profil img {
+  border-radius: 70px;
+}
+.profil span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.title {
+  margin: auto;
+}
