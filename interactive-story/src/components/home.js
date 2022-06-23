@@ -24,7 +24,7 @@ const Home = () => {
           {Donnees &&
             Donnees.map((donnee) => (
               <NavLink
-                to="/artiste"
+                to="/artist/delacoux"
                 style={{ textDecoration: "none", color: "black" }}
               >
                 <div className="rectangle">

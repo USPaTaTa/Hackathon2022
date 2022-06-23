@@ -6,11 +6,15 @@ import "../styles/artistPage.css";
 import Montagne from "../video/montagne.mp4";
 import CommentBox from "./CommentBox";
 import CommentList from "./CommentList";
+import AddContenu from "./artistes";
 
 const artistPage = () => {
   return (
     <div className="base">
       <Header />
+      <div className="AddContenu">
+        <AddContenu />
+      </div>
       <div className="artistHeader">
         <h2>Delacoux</h2>
       </div>
@@ -19,7 +23,6 @@ const artistPage = () => {
       </div>
       <div className="comment">
         <CommentBox />
-        <CommentList />
       </div>
     </div>
   );
